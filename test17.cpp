@@ -162,7 +162,6 @@ void Rotasi(int px, int py, int cx, int cy)
 		menggambarTitik(xf, yf);
 		glFlush();
 		// membuat perlambatan
-		// so that the point can be noticed
 		delay(16000);
 	}
 }
