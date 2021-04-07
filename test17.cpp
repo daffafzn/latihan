@@ -223,7 +223,7 @@ void Skalasi(int px, int py, int sx, int sy)
 
 
 
-// Actual display function
+
 void tampilkanTranslasi() {
 
 		titikTranslasi(px, py, tx, ty);
