@@ -259,21 +259,21 @@ int main(int argc, char** argv)
 
 	system("clear");
 	int pil;
-  cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\033[0m\n";
+  cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\t\t\t\t@2021\033[0m\n";
  cout<<endl;
  std::cout << "" << std::flush;
     for (int x=1;x<2  ;x++) {
         sleep(1);
-        std::cout << "\x1B[91mDefeating me" << std::flush;
+        std::cout << "\x1B[91mMaaf bila" << std::flush;
         
-        std::cout << " \b like that" << std::flush;
+        std::cout << " \b ada salah kata" << std::flush;
         
-        std::cout << " \b has no" << std::flush;
-        sleep(1);
+        std::cout << " \b karena diri ini hanyalah" << std::flush;
+        sleep(2);
         std::cout << " \b " << std::flush;
         
-        sleep(1);
-        std::cout << " \bmeaning\033[0m" << std::flush;
+        sleep(2);
+        std::cout << " \bmanusia biasa\033[0m" << std::flush;
 sleep(1);
     }   
 cout<<endl;
@@ -281,13 +281,13 @@ char opsi;
 	do
 	{
 system("clear");
-cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\033[0m\n";
+cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\t\t\t\t@2021\033[0m\n";
  cout<<endl;
 
 cout<<"\x1B[95m===================================================================================";
 
 cout<<endl;
-cout<<"====================================GRAFIKOM=======================================";
+cout<<"==================================  GRAFIKOM  =====================================";
 cout<<endl;
 cout<<"===================================================================================\n";
 cout<<"            y\n\n            |\n            |\n            |\n            |\n            |\n            ";
@@ -309,13 +309,13 @@ printf("|[1] Membuat Garis Primitive"
 int pil3;
 	system("clear");
 	
-cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\033[0m\n";
+cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\t\t\t\t@2021\033[0m\n";
  cout<<endl;
 
 cout<<"\x1B[95m===================================================================================";
 
 cout<<endl;
-cout<<"====================================GRAFIKOM=======================================";
+cout<<"==================================  GRAFIKOM  =====================================";
 cout<<endl;
 cout<<"===================================================================================\n";
 cout<<"            y\n\n            |\n            |\n            |\n            |\n            |\n            ";
@@ -334,7 +334,7 @@ cout<<"=========================================================================
 switch (pil3) {
 	case 1:
 cout<<"\x1B[95m===================================================================================\n";
-cout<<"==================================Algoritma DDA====================================\n";
+cout<<"================================  Algoritma DDA  ==================================\n";
 cout<<"===================================================================================\033[0m\n";
 	cout<<"\033[3;100;30mMasukkan nilai x1\033[0m >> ";cin>>a;
 cout<<"\033[3;100;30mMasukkan nilai x1\033[0m >> ";cin>>c;
@@ -344,7 +344,7 @@ glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Udah mau bulan puasa maafin ya");
+	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
 	glutDisplayFunc(tampilkanDDA);
 	inialisasi();
 	glutMainLoop();
@@ -352,7 +352,7 @@ glutInit(&argc, argv);
 	case 2:
 
 cout<<"\x1B[95m===================================================================================\n";
-cout<<"==============================Algoritma Bransenham=================================\n";
+cout<<"============================  Algoritma Bransenham  ===============================\n";
 cout<<"===================================================================================\033[0m\n";
 cout<<"\033[3;100;30mMasukkan nilai x1\033[0m >> ";cin>>x1;
 cout<<"\033[3;100;30mMasukkan nilai x2\033[0m >> ";cin>>x2;
@@ -362,7 +362,7 @@ glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Udah mau bulan puasa maafin ya");
+	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
 	glutDisplayFunc(tampilkanBransenham);
 	inialisasi();
 	glutMainLoop();
@@ -379,13 +379,13 @@ glutInit(&argc, argv);
 		
 	int pil2;
 	system("clear");
-cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\033[0m\n";
+cout<<"\x1B[91m                         __                \n_______   ____ ___  ____/  |_  ___________ \n\\_  __ \\_/ __ \\   \\/  /\\   __\\/  _ \\_  __ \\\n |  | \\/\\  ___/ >    <  |  | (  <_> )  | \\/\n |__|    \\____> __/\\__\\ |__|  \\____/|__|\t\t\t\t@2021\033[0m\n";
  cout<<endl;
 
 cout<<"\x1B[95m===================================================================================";
 
 cout<<endl;
-cout<<"====================================GRAFIKOM=======================================";
+cout<<"==================================  GRAFIKOM  =====================================";
 cout<<endl;
 cout<<"===================================================================================\n";
 cout<<"            y\n\n            |\n            |\n            |\n            |\n            |\n            ";
@@ -414,7 +414,7 @@ cout<<"\033[3;100;30mMasukkan nilai ty\033[0m >> ";cin>>ty;
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Udah mau bulan puasa maafin ya");
+	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
 	glutDisplayFunc(tampilkanTranslasi);
 	inialisasi();
 	glutMainLoop();
@@ -429,7 +429,7 @@ glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Udah mau bulan puasa maafin ya");
+	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
 	glutDisplayFunc(tampilkanRotasi);
 	inialisasi();
 	glutMainLoop();
@@ -446,7 +446,7 @@ cout<<"\033[3;100;30mMasukkan nilai sy\033[0m >> ";cin>>sy;
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Udah mau bulan puasa maafin ya");
+	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
 	glutDisplayFunc(tampilkanSkalasi);
 	inialisasi();
 	glutMainLoop();
