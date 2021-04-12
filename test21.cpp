@@ -46,7 +46,7 @@ glBegin(GL_TRIANGLES);
 //320 horizontal tengah
 //240 vertical tengah
     
-glColor3f(0.019,0.019,0.019);
+glColor3f(0.239,0.239,0.239);
 //240++ garisx
 //320++ garisy
     glVertex2f(405.0-haha,305.0);
@@ -91,7 +91,7 @@ glBegin(GL_TRIANGLES);
 //320 horizontal tengah
 //240 vertical tengah
     
-glColor3f(0.019,0.019,0.019);
+glColor3f(0.239,0.239,0.239);
 //240++ garisx
 //320++ garisy
     glVertex2f(405.0-hmmx2,305.0+hmmy2);
@@ -139,7 +139,7 @@ glBegin(GL_LINES);
     glEnd();
 glBegin(GL_TRIANGLES);
 	//glColor3f(0.058,0.058,0.058);
-	glColor3f(0.019,0.019,0.019);
+	glColor3f(0.239,0.239,0.239);
 
     glVertex2f(245.0 /* ujung kiri x */,210.0 /* ujung kiri y */);
     glVertex2f(395.0/* ujung kanan segitiga x*/,210.0 /* ujung kanan segitiga y */);
@@ -402,17 +402,15 @@ int main(int argc, char** argv)
  cout<<endl;
  std::cout << "" << std::flush;
     for (int x=1;x<2  ;x++) {
+        
+        std::cout << "\x1B[91mLoading" << std::flush;
         sleep(1);
-        std::cout << "\x1B[91mMaaf bila" << std::flush;
-        
-        std::cout << " \b ada salah kata" << std::flush;
-        
-        std::cout << " \b karena diri ini hanyalah" << std::flush;
-        sleep(2);
-        std::cout << " \b " << std::flush;
-        
-        sleep(2);
-        std::cout << " \bmanusia biasa\033[0m" << std::flush;
+        std::cout << " \b." << std::flush;
+        sleep(1);
+        std::cout << " \b." << std::flush;
+       
+        sleep(1);
+        std::cout << " \b.\033[0m" << std::flush;
 sleep(1);
     }   
 cout<<endl;
@@ -483,7 +481,7 @@ glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(tampilkanDDA);
 	inialisasi();
 	glutMainLoop();
@@ -501,7 +499,7 @@ glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(tampilkanBransenham);
 	inialisasi();
 	glutMainLoop();
@@ -554,7 +552,7 @@ cout<<"Masukkan nilai ty : ";cin>>ty;
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(tampilkanTranslasi);
 	inialisasi();
 	glutMainLoop();
@@ -570,7 +568,7 @@ glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(tampilkanRotasi);
 	inialisasi();
 	glutMainLoop();
@@ -588,7 +586,7 @@ cout<<"Masukkan nilai sy : ";cin>>sy;
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(tampilkanSkalasi);
 	inialisasi();
 	glutMainLoop();
@@ -626,7 +624,7 @@ cout<<"=========================================================================
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(refleksi);
 	inialisasi();
 	glutMainLoop();
@@ -645,7 +643,7 @@ cout<<"=========================================================================
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(refleksi2);
 	inialisasi();
 	glutMainLoop();
@@ -657,19 +655,15 @@ cout<<"=========================================================================
 	break;
 	}
 	case 5:
-	cout<<"*Rentang input nilai maksimal adalah 0-20\n*Jika diluar rentang maka nilai otomatis menjadi 0(tidak berubah)\n*Untuk menjaga segitiga agar tetap terlihat simetris\n*Dan tidak terpotong karena melebih layar yang sudah ditentukan\n*Nilai akan otomatis menjadi panjang masing-masing sudut segitiga (x,y)\n\n(x1,y1) koordinat sudut A\n(x2,y2) koordinat sudut B\n(x3,y3) koordinat sudut C\n\n";
+	cout<<"*Rentang input nilai maksimal adalah 0-15\n*Jika diluar rentang maka nilai otomatis menjadi 0(tidak berubah dari keadaan awal)\n*Untuk menjaga segitiga agar tetap terlihat simetris\n*Dan tidak terpotong karena melebih layar yang sudah ditentukan\n\n\n";
 	
-	cout<<"Masukkan nilai koordinat (x1) : ";cin>>x1;
-	cout<<"\nMasukkan nilai koordinat (y1) : ";cin>>hmmy1;
-	cout<<"\nMasukkan nilai koordinat (x2) : ";cin>>hmmx2;
-	cout<<"\nMasukkan nilai koordinat (y2) : ";cin>>hmmy2;
-	cout<<"\nMasukkan nilai koordinat (x3) : ";cin>>hmmmx3;
-	cout<<"\nMasukkan nilai koordinat (y3) : ";cin>>hmmy3;
+	cout<<"\nMasukkan nilai refleksi : ";cin>>hmmmx3;
+	
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize(maxWD, maxHT);
 	glutInitWindowPosition(700, 100);
-	glutCreateWindow("Karena udah mau bulan puasa maafin ya");
+	glutCreateWindow("Grafikom");
 	glutDisplayFunc(shear);
 	inialisasi();
 	glutMainLoop();
