@@ -416,7 +416,7 @@ int main(int argc, char** argv)
 sleep(1);
     }   
 cout<<endl;
-char opsi;
+char apahayo;
 	do
 	{
 system("clear");
@@ -507,7 +507,7 @@ glutInit(&argc, argv);
 	glutMainLoop();
 	break;
 	case 3:
-	opsi = 'N';
+	apahayo = 'N';
 	break;
 	}
 	break;
@@ -653,7 +653,7 @@ cout<<"=========================================================================
 		
 	break;
 	case 3:
-	opsi = 'N';
+	apahayo = 'N';
 	break;
 	}
 	case 5:
@@ -675,19 +675,19 @@ cout<<"=========================================================================
 	glutMainLoop();
 	break;
 	case 6:
-	opsi = 'N';
+	apahayo = 'N';
 	break;
 	}
 	break;
 	case 3:
 	cout << "\n\nApakah Anda Ingin Keluar ? " << endl;
 		cout << "Ketik y atau n "<<endl<<">>";
-	cin >> opsi;
+	cin >> apahayo;
 	break;
 
 	}
 
-}while(opsi == 'n' || opsi == 'N');
+}while(apahayo == 'n' || apahayo == 'N');
 
 
 	
